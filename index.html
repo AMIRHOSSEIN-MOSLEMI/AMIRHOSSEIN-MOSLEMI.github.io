@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amirhossein Moslemi — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+</head>
+<body>
+
+  <div class="site-wrap">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <div class="logo-mark">AM</div>
+      <span class="logo-text">Amirhossein Moslemi</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="nav-pill" data-tab="projects">projects</a>
+      <a href="#" class="nav-pill" data-tab="about">about</a>
+      <a href="#" class="nav-pill" data-tab="skills">skills</a>
+      <a href="#" class="nav-pill" data-tab="contact">contact</a>
+    </div>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">open to work</span>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+      <i class="ti ti-menu-2"></i>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" class="mob-link" data-tab="projects">projects</a>
+    <a href="#" class="mob-link" data-tab="about">about</a>
+    <a href="#" class="mob-link" data-tab="skills">skills</a>
+    <a href="#" class="mob-link" data-tab="contact">contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="accent-bar"></div>
+      <p class="hero-eyebrow">Computer Engineering · AI · Turin</p>
+      <h1 class="hero-name">Amirhossein<br><em>Moslemi</em></h1>
+      <p class="hero-sub">MSc student at Politecnico di Torino — building at the intersection of AI systems, software engineering, and full-stack development.</p>
+      <div class="hero-actions">
+        <a href="asset/AmirhosseinMoslemi-CV.pdf" download class="btn-main"><i class="ti ti-download"></i> Download CV</a>
+        <a href="#" class="btn-ghost" data-tab="contact">Contact</a>
+        <a href="https://github.com/AMIRHOSSEIN-MOSLEMI" target="_blank" class="btn-icon" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+        <a href="https://www.linkedin.com/in/amirhosseinmoslemi-692123266" target="_blank" class="btn-icon" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="mini-cards">
+        <div class="mini-card purple">
+          <div class="mc-val">2023<span>–now</span></div>
+          <div class="mc-lbl">MSc · PoliTo</div>
+        </div>
+        <div class="mini-card gray">
+          <div class="mc-val">Turin<span> IT</span></div>
+          <div class="mc-lbl">Based in</div>
+        </div>
+      </div>
+      <div class="wide-card">
+        <div class="wc-left">
+          <div class="wc-icon"><i class="ti ti-briefcase"></i></div>
+          <div>
+            <div class="wc-label">Seeking internship & thesis</div>
+            <div class="wc-sub">AI · Software Engineering · Full-stack</div>
+          </div>
+        </div>
+        <div class="wc-tag">Available</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDU ROW -->
+  <div class="edu-row">
+    <div class="edu-cell">
+      <i class="ti ti-school"></i>
+      <span><strong>Politecnico di Torino</strong> · MSc Computer Engineering (AI)</span>
+      <span class="edu-badge polito">PoliTo</span>
+    </div>
+    <div class="edu-cell">
+      <i class="ti ti-building"></i>
+      <span><strong>Yazd University</strong> · BSc Computer Engineering</span>
+      <span class="edu-badge yazd">Yazd</span>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab active" data-tab="projects">
+      <span class="tab-dot"></span>Projects
+      <span class="tab-count">3</span>
+    </button>
+    <button class="tab" data-tab="about">
+      <i class="ti ti-user"></i>About
+    </button>
+    <button class="tab" data-tab="skills">
+      <i class="ti ti-code"></i>Skills
+    </button>
+    <button class="tab" data-tab="contact">
+      <i class="ti ti-mail"></i>Contact
+    </button>
+  </div>
+
+  <!-- PANEL: PROJECTS -->
+  <div class="panel active" id="panel-projects">
+    <div class="proj-grid">
+
+      <div class="proj-card" data-index="0">
+        <div class="proj-top">
+          <span class="proj-badge badge-ai">AI · Research</span>
+          <i class="ti ti-arrow-up-right proj-arrow"></i>
+        </div>
+        <h3 class="proj-name">Task Arithmetic Under Bias-Variance Trade-offs</h3>
+        <div class="proj-stack">
+          <span class="chip">PyTorch</span>
+          <span class="chip">ViT</span>
+          <span class="chip">Deep Learning</span>
+        </div>
+      </div>
+
+      <div class="proj-card" data-index="1">
+        <div class="proj-top">
+          <span class="proj-badge badge-fs">Full-stack</span>
+          <i class="ti ti-arrow-up-right proj-arrow"></i>
+        </div>
+        <h3 class="proj-name">Social Budget Application</h3>
+        <div class="proj-stack">
+          <span class="chip">React.js</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">REST API</span>
+        </div>
+      </div>
+
+      <div class="proj-card" data-index="2">
+        <div class="proj-top">
+          <span class="proj-badge badge-se">Software Eng.</span>
+          <i class="ti ti-arrow-up-right proj-arrow"></i>
+        </div>
+        <h3 class="proj-name">Ezelectronics E-commerce System</h3>
+        <div class="proj-stack">
+          <span class="chip">JavaScript</span>
+          <span class="chip">UML</span>
+          <span class="chip">SQL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PANEL: ABOUT -->
+  <div class="panel" id="panel-about">
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a Computer Engineering master's student at Politecnico di Torino, specializing in Artificial Intelligence. My background combines a strong foundation in software engineering with hands-on experience in machine learning and full-stack development.</p>
+        <p>I'm currently looking for an internship or thesis collaboration where I can contribute to real-world AI or software engineering challenges — ideally in a team that values clean code and thoughtful system design.</p>
+        <p>Outside of coursework, I enjoy building projects that sit at the intersection of AI and practical software — from deep learning research to full-stack web apps.</p>
+      </div>
+      <div class="lang-block">
+        <p class="lang-title">Languages</p>
+        <div class="lang-row">
+          <div class="lang-top"><span class="lang-name">English</span><span class="lang-level">Full professional</span></div>
+          <div class="lang-bar"><div class="lang-fill" style="width:88%;background:#534AB7"></div></div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-top"><span class="lang-name">Italian</span><span class="lang-level">Elementary (A2)</span></div>
+          <div class="lang-bar"><div class="lang-fill" style="width:28%;background:#3f3f46"></div></div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-top"><span class="lang-name">Persian</span><span class="lang-level">Native</span></div>
+          <div class="lang-bar"><div class="lang-fill" style="width:100%;background:#7F77DD"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: SKILLS -->
+  <div class="panel" id="panel-skills">
+    <div class="skills-grid">
+      <div class="skill-item"><span class="skill-dot purple"></span><span>Python · Java · JS</span></div>
+      <div class="skill-item"><span class="skill-dot purple"></span><span>PyTorch · Deep Learning</span></div>
+      <div class="skill-item"><span class="skill-dot purple"></span><span>React.js · Node.js</span></div>
+      <div class="skill-item"><span class="skill-dot gray"></span><span>REST API · SQL</span></div>
+      <div class="skill-item"><span class="skill-dot gray"></span><span>Computer Vision (ViT)</span></div>
+      <div class="skill-item"><span class="skill-dot gray"></span><span>UML · Software Design</span></div>
+      <div class="skill-item"><span class="skill-dot gray"></span><span>Data Visualization</span></div>
+      <div class="skill-item"><span class="skill-dot purple"></span><span>Machine Learning</span></div>
+    </div>
+  </div>
+
+  <!-- PANEL: CONTACT -->
+  <div class="panel" id="panel-contact">
+    <div class="contact-grid">
+      <div class="contact-links">
+        <p class="contact-title">Get in touch</p>
+        <a href="mailto:amirmoslemi88.am@gmail.com" class="contact-link">
+          <i class="ti ti-mail"></i>
+          <div>
+            <div class="cl-label">amirmoslemi88.am@gmail.com</div>
+            <div class="cl-sub">Email · Preferred</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/amirhosseinmoslemi-692123266" target="_blank" class="contact-link">
+          <i class="ti ti-brand-linkedin"></i>
+          <div>
+            <div class="cl-label">linkedin.com/in/amirhosseinmoslemi</div>
+            <div class="cl-sub">LinkedIn</div>
+          </div>
+        </a>
+        <a href="https://github.com/AMIRHOSSEIN-MOSLEMI" target="_blank" class="contact-link">
+          <i class="ti ti-brand-github"></i>
+          <div>
+            <div class="cl-label">github.com/AMIRHOSSEIN-MOSLEMI</div>
+            <div class="cl-sub">GitHub</div>
+          </div>
+        </a>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Your email" required />
+        </div>
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Your message..." rows="4"></textarea>
+        <button type="submit" class="btn-main">Send message <i class="ti ti-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-l">AMIRHOSSEIN-MOSLEMI.github.io · 2025</span>
+    <div class="footer-r">
+      <a href="https://github.com/AMIRHOSSEIN-MOSLEMI" target="_blank"><i class="ti ti-brand-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/amirhosseinmoslemi-692123266" target="_blank"><i class="ti ti-brand-linkedin"></i> LinkedIn</a>
+      <a href="mailto:amirmoslemi88.am@gmail.com"><i class="ti ti-mail"></i> Email</a>
+    </div>
+  </footer>
+
+  </div><!-- end site-wrap -->
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalBox">
+      <button class="modal-close" id="modalClose" aria-label="Close"><i class="ti ti-x"></i></button>
+      <span class="modal-badge" id="mBadge"></span>
+      <h2 class="modal-title" id="mTitle"></h2>
+      <p class="modal-desc" id="mDesc"></p>
+      <div class="modal-chips" id="mStack"></div>
+      <p class="modal-date" id="mDate"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
